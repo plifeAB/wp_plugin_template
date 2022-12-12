@@ -13,7 +13,7 @@ function test() {
     echo "im in";
 }
 
-add_action("murat","test");
+add_action("test_hook","test");
 
 function menu_scroll_enqueue_script() {
     wp_enqueue_script( 'my_menu_scroll', plugin_dir_url( __FILE__ ) . 'assets/menu-scroll.js',array('jquery'),1.1,true );
